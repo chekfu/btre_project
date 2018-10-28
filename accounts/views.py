@@ -1,18 +1,20 @@
 from django.shortcuts import render, redirect  
+from django.contrib import messages, auth
 
 # Create your views here.
 
 def register(request):
     if request.method == 'POST':
+        messages.error(request, 'Testing error message')  
       # register user
-      return
+        return redirect('register')  
     else:
         return render(request, 'accounts/register.html')
 
 def login(request):
     if request.method == 'POST':
       # login user
-      return
+        return
     else:
         return render(request, 'accounts/login.html')
 
