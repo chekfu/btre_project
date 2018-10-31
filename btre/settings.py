@@ -167,3 +167,8 @@ EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 #This did the trick if mail not working
 #DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
