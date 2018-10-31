@@ -147,15 +147,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-#email config
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
-#This did the trick if mail not working
-#DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 
 try:
     from .local_settings import *
