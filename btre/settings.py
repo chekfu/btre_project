@@ -81,18 +81,7 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-#vps config;
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
-        'USER': 'dbadmin',
-        'PASSWORD': 'as',
-        'HOST': 'localhost'
-    }
-}
-'''
+
 #Local dev config:
 DATABASES = {
     'default': {
