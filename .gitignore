@@ -9,3 +9,4 @@ db.sqlite3
 venv
 /static
 /btre_project/settings.py
+.idea.idea
